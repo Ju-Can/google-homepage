@@ -19,14 +19,11 @@ li{
     float: right;
 }
 
-
-.topnav{
-    background-color: grey;
-}
-
+/*
 .topnav .apps-logo{
     width: 50px;
 }
+*/
 
 .topnav .apps-logo:hover{
     background-color: rgba(211, 211, 211, 0.5);
@@ -53,7 +50,20 @@ li{
 .img{
     position: absolute;
     display: block;
-    margin: 210px;
-    margin-left: 550px;
+    text-align: center;
+    margin: 210px center;
+
+}
+
+.wrapper .input{
+
+    text-align: center;
+}
+/* 
+.wrapper .input{
+    border-radius: 50px;
+    position: center;
+    width: 550px;
+    border:rgba(211, 211, 211, 0.5) solid 1.5px;
 }
 
