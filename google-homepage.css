@@ -1,3 +1,49 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,11 +65,14 @@ li{
     float: right;
 }
 
-/*
-.topnav .apps-logo{
-    width: 50px;
+
+.topnav{
+    background-color: grey;
 }
-*/
+
+.topnav .apps-logo{
+    
+}
 
 .topnav .apps-logo:hover{
     background-color: rgba(211, 211, 211, 0.5);
@@ -50,20 +99,82 @@ li{
 .img{
     position: absolute;
     display: block;
-    text-align: center;
-    margin: 210px center;
+    margin: 220px;
+    margin-left: 576px;
+}
 
+/*
+.img{
+    display: block;
+    margin: 220px auto;
+}
+*/
+
+.wrapper{
+    display: block;
+    position: absolute;
+    margin: 338px 420px;
 }
 
 .wrapper .input{
-
-    text-align: center;
-}
-/* 
-.wrapper .input{
+    width: 580px;
+    height: 42px;
     border-radius: 50px;
-    position: center;
-    width: 550px;
-    border:rgba(211, 211, 211, 0.5) solid 1.5px;
+    border:rgba(211, 211, 211, 0.7) solid 1.4px;
+    font-size: 15px;
 }
 
+.wrapper .search-logo{
+    position: absolute;
+    display: block;
+    width: 20px;
+    margin: -33px 15px;
+}
+
+.middle{
+    position: absolute;
+    margin: 410px 570px;
+}
+
+.middle .google-search{
+    padding: 10px 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    color: #3c4043;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F9Fa;
+    cursor: pointer;
+    
+}
+
+.middle .google-search:hover{
+    border: rgba(112, 112, 112, 0.39) solid 1.3px; 
+    padding: 9px 15px;
+    
+}
+
+.middle .lucky{
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    color: #3c4043;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F9Fa;
+    cursor: pointer;
+}
+
+.middle .lucky:hover{
+    border: rgba(112, 112, 112, 0.39) solid 1.3px; 
+    padding: 9px 14px;
+}
+
+.footnav{
+    position: absolute;
+    display: fixed;
+    margin: 0 auto;
+    background-color: rgba(211, 211, 211, 0.5);
+}
